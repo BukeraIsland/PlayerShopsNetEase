@@ -152,7 +152,7 @@ public class PlayerShopTER implements BlockEntityRenderer<PlayerShopBlockEntity>
         matrix.mulPose(new Quaternionf().fromAxisAngleDeg(0, -1, 0, 270));
         matrix.mulPose(new Quaternionf().fromAxisAngleDeg(-1, 0, 0, 0));
         matrix.translate(stock > 99 ? -59.5 : stock > 9 ? -56.5 : -53.5, -8.5, -80.001);
-        font.drawInBatch("Qty: " + stock, 0f, 0f, 0, false, matrix.last().pose(), buffer, Font.DisplayMode.NORMAL, 0, 0, false);
+        font.drawInBatch("库存：" + stock, 0f, 0f, 0, false, matrix.last().pose(), buffer, Font.DisplayMode.NORMAL, 0, 0, false);
         matrix.popPose();
 
         matrix.popPose();
